@@ -1,0 +1,62 @@
+@font-face {
+  font-family: Avenir Next;
+  src: url("../../assets/fonts/AvenirNextLTPro-Regular.otf"); }
+@font-face {
+  font-family: Avenir Bold;
+  src: url("../../assets/fonts/AvenirNextLTPro-Bold.otf"); }
+#header {
+  display: flex;
+  background-color: #3a98c8;
+  padding: 10px 8%;
+  font-family: "Avenir Next";
+  align-items: center;
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff; }
+  #header .logo-container {
+    font-family: "Avenir Bold";
+    flex-grow: 1;
+    min-width: 20%;
+    display: inline-block; }
+  #header ul {
+    flex-grow: 3;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    width: 70%;
+    align-items: center;
+    margin: 0; }
+    #header ul li {
+      flex-grow: 1; }
+      #header ul li .link-el {
+        color: #fff;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 400; }
+  #header .user-details-wrapper {
+    flex-grow: 1;
+    min-width: 20%;
+    display: inline-flex;
+    align-items: center; }
+    #header .user-details-wrapper .user-details {
+      align-items: center;
+      flex-grow: 6;
+      display: inline-flex; }
+      #header .user-details-wrapper .user-details .user-image img {
+        width: 50px;
+        height: 50px; }
+      #header .user-details-wrapper .user-details .user-name {
+        display: inline-flex;
+        flex-direction: column;
+        padding-left: 10px; }
+        #header .user-details-wrapper .user-details .user-name span {
+          font-size: 14px;
+          font-weight: 400; }
+        #header .user-details-wrapper .user-details .user-name .user {
+          font-family: "Avenir Next";
+          font-size: 18px;
+          font-weight: 500; }
+    #header .user-details-wrapper .logout-btn-container {
+      flex-grow: 1; }
+
+/*# sourceMappingURL=header.css.map */
