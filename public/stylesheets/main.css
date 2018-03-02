@@ -101,15 +101,35 @@
         position: absolute;
         left: 10px;
         top: 10px; }
-        .item-wrapper .items-container ul li .checkbox-container label {
-          display: inline-block;
-          width: 20px;
-          height: 20px;
-          border-radius: 50%;
-          border: 1px solid #ddd; }
-        .item-wrapper .items-container ul li .checkbox-container input {
-          display: none; }
-        .item-wrapper .items-container ul li .checkbox-container input:checked + label {
-          background-color: #3a98c8; }
+
+.item-table-wrapper table {
+  width: 100%;
+  border-radius: 6px; }
+  .item-table-wrapper table thead {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fbfbfb;
+    color: #333333;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 24px; }
+  .item-table-wrapper table tbody tr {
+    background-color: #fff;
+    font-weight: 400;
+    font-size: 15px; }
+    .item-table-wrapper table tbody tr:nth-child(even) {
+      background-color: #c6cbd4; }
+    .item-table-wrapper table tbody tr a {
+      color: #39a0d3;
+      text-decoration: none; }
+  .item-table-wrapper table td,
+  .item-table-wrapper table th {
+    padding: 5px;
+    vertical-align: middle; }
+    .item-table-wrapper table td:nth-child(4), .item-table-wrapper table td:nth-child(5), .item-table-wrapper table td:nth-child(6), .item-table-wrapper table td:nth-child(7),
+    .item-table-wrapper table th:nth-child(4),
+    .item-table-wrapper table th:nth-child(5),
+    .item-table-wrapper table th:nth-child(6),
+    .item-table-wrapper table th:nth-child(7) {
+      text-align: center; }
 
 /*# sourceMappingURL=main.css.map */

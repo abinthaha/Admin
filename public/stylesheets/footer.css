@@ -1,0 +1,33 @@
+@font-face {
+  font-family: Avenir Next;
+  src: url("../../assets/fonts/AvenirNextLTPro-Regular.otf"); }
+@font-face {
+  font-family: Avenir Bold;
+  src: url("../../assets/fonts/AvenirNextLTPro-Bold.otf"); }
+footer {
+  background-color: #262626;
+  padding: 15px 8%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  footer .all-rights, footer .name {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    opacity: 0.5;
+    display: inline-flex;
+    margin: 0 2px;
+    justify-content: center;
+    align-items: center; }
+  footer .round {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin-right: 5px; }
+  footer .name {
+    opacity: 0.9; }
+
+/*# sourceMappingURL=footer.css.map */
