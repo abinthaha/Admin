@@ -8,6 +8,53 @@ body {
     padding: 0;
 }
 
+.btn-group.dropdown-group {
+    display: inline-flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin-right: 15px;
+
+    .dropdown-label {
+        opacity: 0.6;
+        color: #585f6f;
+        font-size: 14px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    .btn-outline-primary {
+        border-radius: 25px;
+    }
+}
+
+.dropdown-group {
+    flex-grow: 1;
+
+    .btn-outline-primary {
+        border-radius: 20px;
+        min-width: 150px;
+    }
+}
+
+.btn {
+    min-width: 150px;
+}
+
+.btn-primary {
+    border-color: $header_blue;
+    background-color: $header_blue;
+}
+
+.btn-outline-primary {
+    border-color: $header_blue;
+    color: $header_blue;
+
+    &:hover {
+        border-color: $header_blue;
+        background-color: $header_blue;
+    }
+}
+
 .checkbox-container {
     label {
         display: inline-flex;

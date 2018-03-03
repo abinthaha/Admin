@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>WSIG Admin</title>
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./public/stylesheets/header.css">
+    <link rel="stylesheet" href="./public/stylesheets/common.css">
+    <link rel="stylesheet" href="./public/stylesheets/main.css">
+    <link rel="stylesheet" href="./public/stylesheets/footer.css">
+    <link rel="stylesheet" href="./public/stylesheets/edit.css">
+</head>
+
+<body ng-app="myApp">
+    <header id="header" class="col-md-12">
+        <div class="logo-container col-md-3">WhatShallIGet</div>
+        <ul class="col-md-6">
+            <li>
+                <a class="link-el" href="/">List Items</a>
+            </li>
+            <li>
+                <a class="link-el" href="/copy-items">Copy Items</a>
+            </li>
+            <li>
+                <a class="link-el" href="/category">Category</a>
+            </li>
+            <li>
+                <a class="link-el" href="/language">Language</a>
+            </li>
+            <li>
+                <a class="link-el" href="/resource-title">Resource Title</a>
+            </li>
+            <li>
+                <a class="link-el" href="/country">Country</a>
+            </li>
+        </ul>
+        <div class="user-details-wrapper col-md-3">
+            <span class="user-details">
+                <span class="user-image">
+                    <img src="./assets/images/user-name.png" alt="">
+                </span>
+            <span class="user-name">
+                    <span>Hello</span>
+            <span class="user">Master Admin</span>
+            </span>
+            </span>
+            <span class="logout-btn-container">
+                <a href="/logout">
+                    <img src="./assets/images/logout.png" alt="">
+                </a>
+            </span>
+        </div>
+    </header>
+    <main id="app">
+        <section class="menu-header">
+            <div class="">
+                <h3>List Items</h3>
+            </div>
+            <div class="text-right">
+                <button type="button" class="btn btn-outline-primary">Create New</button>
+            </div>
+        </section>
+        <section class="edit-item">
+            <div class="img-section">
+                <span class="img-wrapper">
+                    <img src="./assets/images/items/air-cooler.png" alt="">
+                </span>
+                <span class="change-link">
+                    <a href="">Change Image</a>
+                </span>
+            </div>
+            <div class="details-section">
+                <section class="item-name">
+                    <input type="text" name="" value="Air Cooler">
+                </section>
+                <section class="item-values-wrapper">
+                    <div class="btn-group dropdown-group">
+                        <span class="dropdown-label">Category ID</span>
+                        <button type="button" class="btn btn-outline-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            5EFC8SD2154
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Action</a>
+                        </div>
+                    </div>
+                    <div class="btn-group dropdown-group">
+                        <span class="dropdown-label">Language ID</span>
+                        <button type="button" class="btn btn-outline-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            1
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Action</a>
+                        </div>
+                    </div>
+                    <div class="btn-group dropdown-group">
+                        <span class="dropdown-label">Country ID</span>
+                        <button type="button" class="btn btn-outline-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            2
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Action</a>
+                        </div>
+                    </div>
+                    <div class="btn-group dropdown-group">
+                        <span class="dropdown-label">Parent Category ID</span>
+                        <button type="button" class="btn btn-outline-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            1
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Action</a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="btn-section">
+                <button type="button" class="btn btn-primary">Save</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <span class="all-rights">
+            <span class="round"></span> 2018. All Rights Reserved
+        </span>
+        <span class="name">
+            WhatshalliGet Technologies Pvt Ltd
+        </span>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="./router.js" charset="utf-8"></script>
+    <script src="./app.js" charset="utf-8"></script>
+</body>
+
+</html>

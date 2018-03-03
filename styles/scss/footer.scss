@@ -1,5 +1,15 @@
 @import "./variables";
 
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
 footer {
     background-color: #262626;
     padding: 15px $side_padding;
@@ -8,7 +18,8 @@ footer {
     justify-content: center;
     align-items: center;
 
-    .all-rights, .name {
+    .all-rights,
+    .name {
         color: $white;
         font-size: 14px;
         font-weight: 400;

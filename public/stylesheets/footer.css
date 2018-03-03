@@ -4,6 +4,14 @@
 @font-face {
   font-family: Avenir Bold;
   src: url("../../assets/fonts/AvenirNextLTPro-Bold.otf"); }
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column; }
+
+main {
+  flex: 1; }
+
 footer {
   background-color: #262626;
   padding: 15px 8%;
@@ -11,7 +19,8 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center; }
-  footer .all-rights, footer .name {
+  footer .all-rights,
+  footer .name {
     color: #fff;
     font-size: 14px;
     font-weight: 400;
