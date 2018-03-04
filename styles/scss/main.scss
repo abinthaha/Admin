@@ -101,15 +101,30 @@
                     background-color: #f4f5fa;
                 }
 
-                &.active {
-                    box-shadow: 0 6px 34px rgba(44, 133, 237, 0.25);
-                    border: 2px solid #3a98c8;
-                }
-
-                .checkbox-container {
+                .active-check {
                     position: absolute;
                     left: 10px;
                     top: 10px;
+                    display: inline-flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+                    border: 1px solid #ddd;
+                }
+
+                &.active {
+                    box-shadow: 0 6px 34px rgba(44, 133, 237, 0.25);
+                    border: 2px solid #3a98c8;
+
+                    .active-check {
+                        background-color: #3a98c8;
+
+                        &::before {
+                            content: '\f00c';
+                        }
+                    }
                 }
             }
         }

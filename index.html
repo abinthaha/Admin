@@ -62,7 +62,7 @@
         </section>
         <section class="filter-section">
             <div class="filter-wrapper">
-                <div class="btn-group dropdown-group">
+                <div class="btn-group dropdown-group" data-groupname="country">
                     <span class="dropdown-label">Country</span>
                     <button type="button" class="btn btn-outline-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <span class="country-flag">
@@ -71,34 +71,42 @@
                         India
                     </button>
                     <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Action</a>
+                        <span class="dropdown-item" id="country1">India</span>
+                        <span class="dropdown-item" id="country2">China</span>
+                        <span class="dropdown-item" id="country3">Cuba</span>
                     </div>
                 </div>
-                <div class="btn-group dropdown-group">
+                <div class="btn-group dropdown-group" data-groupname="language">
                     <span class="dropdown-label">Language</span>
                     <button type="button" class="btn btn-outline-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         English
                     </button>
                     <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Action</a>
+                        <span class="dropdown-item" id="lang1">English</span>
+                        <span class="dropdown-item" id="lang2">Hindi</span>
+                        <span class="dropdown-item" id="lang3">Malayalam</span>
                     </div>
                 </div>
-                <div class="btn-group dropdown-group">
+                <div class="btn-group dropdown-group" data-groupname="parent_category">
                     <span class="dropdown-label">Parent Category</span>
                     <button type="button" class="btn btn-outline-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Home
                     </button>
                     <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Action</a>
+                        <span class="dropdown-item" id="p_cat1">Home</span>
+                        <span class="dropdown-item" id="p_cat2">Home</span>
+                        <span class="dropdown-item" id="p_cat3">Home</span>
                     </div>
                 </div>
-                <div class="btn-group dropdown-group">
+                <div class="btn-group dropdown-group" data-groupname="category">
                     <span class="dropdown-label">Category</span>
                     <button type="button" class="btn btn-outline-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         India
                     </button>
                     <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Action</a>
+                        <span class="dropdown-item" id="cat1">India</span>
+                        <span class="dropdown-item" id="cat2">India</span>
+                        <span class="dropdown-item" id="cat3">India</span>
                     </div>
                 </div>
             </div>
@@ -120,136 +128,15 @@
                     <span class="number"> 10</span>
                 </span>
             </div>
-            <div class="items-container">
+            <div class="items-container" id="tile-view">
                 <ul>
-                    <li class="active">
-                        <span class="checkbox-container">
-                            <input type="checkbox" checked id="input1" value="">
-                            <label for="input1"></label>
-                        </span>
-                        <span class="item-img">
-                            <img src="./assets/images/items/air-cooler.png" alt="">
-                        </span>
-                        <span class="item-name">
-                            Air Cooler
-                        </span>
-                    </li>
-                    <li>
-                        <span class="checkbox-container">
-                            <input type="checkbox" id="input2" value="">
-                            <label for="input2"></label>
-                        </span>
-                        <span class="item-img">
-                            <img src="./assets/images/items/air-cooler.png" alt="">
-                        </span>
-                        <span class="item-name">
-                            Air Cooler
-                        </span>
-                    </li>
-                    <li>
-                        <span class="checkbox-container">
-                            <input type="checkbox" checked id="input3" value="">
-                            <label for="input3"></label>
-                        </span>
-                        <span class="item-img">
-                            <img src="./assets/images/items/air-cooler.png" alt="">
-                        </span>
-                        <span class="item-name">
-                            Air Cooler
-                        </span>
-                    </li>
-                    <li>
-                        <span class="checkbox-container">
-                            <input type="checkbox" id="input2" value="">
-                            <label for="input2"></label>
-                        </span>
-                        <span class="item-img">
-                            <img src="./assets/images/items/air-cooler.png" alt="">
-                        </span>
-                        <span class="item-name">
-                            Air Cooler
-                        </span>
-                    </li>
-                    <li class="active">
-                        <span class="checkbox-container">
-                            <input type="checkbox" id="input2" value="">
-                            <label for="input2"></label>
-                        </span>
-                        <span class="item-img">
-                            <img src="./assets/images/items/air-cooler.png" alt="">
-                        </span>
-                        <span class="item-name">
-                            Air Cooler
-                        </span>
-                    </li>
-                    <li>
-                        <span class="checkbox-container">
-                            <input type="checkbox" id="input2" value="">
-                            <label for="input2"></label>
-                        </span>
-                        <span class="item-img">
-                            <img src="./assets/images/items/air-cooler.png" alt="">
-                        </span>
-                        <span class="item-name">
-                            Air Cooler
-                        </span>
-                    </li>
-                    <li>
-                        <span class="checkbox-container">
-                            <input type="checkbox" id="input2" value="">
-                            <label for="input2"></label>
-                        </span>
-                        <span class="item-img">
-                            <img src="./assets/images/items/air-cooler.png" alt="">
-                        </span>
-                        <span class="item-name">
-                            Air Cooler
-                        </span>
-                    </li>
-                    <li>
-                        <span class="checkbox-container">
-                            <input type="checkbox" id="input2" value="">
-                            <label for="input2"></label>
-                        </span>
-                        <span class="item-img">
-                            <img src="./assets/images/items/air-cooler.png" alt="">
-                        </span>
-                        <span class="item-name">
-                            Air Cooler
-                        </span>
-                    </li>
-                    <li>
-                        <span class="checkbox-container">
-                            <input type="checkbox" id="input2" value="">
-                            <label for="input2"></label>
-                        </span>
-                        <span class="item-img">
-                            <img src="./assets/images/items/air-cooler.png" alt="">
-                        </span>
-                        <span class="item-name">
-                            Air Cooler
-                        </span>
-                    </li>
-                    <li>
-                        <span class="checkbox-container">
-                            <input type="checkbox" id="input2" value="">
-                            <label for="input2"></label>
-                        </span>
-                        <span class="item-img">
-                            <img src="./assets/images/items/air-cooler.png" alt="">
-                        </span>
-                        <span class="item-name">
-                            Air Cooler
-                        </span>
-                    </li>
                 </ul>
             </div>
         </section>
     </main>
     <footer>
         <span class="all-rights">
-            <span class="round"></span>
-            2018. All Rights Reserved
+            <span class="round"></span> 2018. All Rights Reserved
         </span>
         <span class="name">
             WhatshalliGet Technologies Pvt Ltd
@@ -260,6 +147,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="./router.js" charset="utf-8"></script>
     <script src="./app.js" charset="utf-8"></script>
+    <script src="./public/js/listing.js" charset="utf-8"></script>
+    <script src="./public/js/filter.js" charset="utf-8"></script>
 </body>
 
 </html>

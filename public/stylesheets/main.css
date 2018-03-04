@@ -78,13 +78,24 @@
         width: 100%;
         border-radius: 0 0 3px 3px;
         background-color: #f4f5fa; }
+      .item-wrapper .items-container ul li .active-check {
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: 1px solid #ddd; }
       .item-wrapper .items-container ul li.active {
         box-shadow: 0 6px 34px rgba(44, 133, 237, 0.25);
         border: 2px solid #3a98c8; }
-      .item-wrapper .items-container ul li .checkbox-container {
-        position: absolute;
-        left: 10px;
-        top: 10px; }
+        .item-wrapper .items-container ul li.active .active-check {
+          background-color: #3a98c8; }
+          .item-wrapper .items-container ul li.active .active-check::before {
+            content: '\f00c'; }
 
 .item-table-wrapper table {
   width: 100%;
