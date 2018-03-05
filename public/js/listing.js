@@ -33,8 +33,8 @@ let activeItemsArray = [];
 $(document).ready(function() {
     ItemArray.forEach(function(item) {
         let checkItem = '<span class="active-check"></span>'
-        let itemImg = '<span class="item-img"><img src="' + item.img_path + '" alt=""></span>'
-        let itemName = '<span class="item-name">' + item.name + '</span>'
+        let itemImg = '<span class="item-img" style="background-image: url(' + item.img_path + ')"></span>'
+        let itemName = '<span class="item-name" title="' + item.name + '"><a href="edit.html">' + item.name + '</a></span>'
         let activeClass = item.active ? ' active' : ''
         item.active && activeItemsArray.push(item.id)
         $('#tile-view ul').append('<li id=' + item.id + ' class="tile-item' + activeClass + '">' + checkItem + itemImg + itemName + '</li>')

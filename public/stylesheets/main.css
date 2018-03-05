@@ -50,35 +50,43 @@
     list-style: none;
     display: flex;
     flex-wrap: wrap; }
-    .item-wrapper .items-container ul li {
+    .item-wrapper .items-container ul .tile-item {
       border-radius: 5px;
       border: 1px solid #c8c8c8;
       background-color: #ffffff;
       flex-grow: 1;
       padding: 0;
       margin: 10px;
-      width: 210px;
-      max-width: 210px;
-      min-width: 210px;
-      height: 210px;
+      width: 150px;
+      max-width: 150px;
+      min-width: 150px;
+      height: 150px;
       display: inline-flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       position: relative; }
-      .item-wrapper .items-container ul li .item-img {
+      .item-wrapper .items-container ul .tile-item .item-img {
         flex-grow: 1;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center; }
-      .item-wrapper .items-container ul li .item-name {
-        padding: 5px;
         display: inline-flex;
         justify-content: center;
         width: 100%;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain; }
+      .item-wrapper .items-container ul .tile-item .item-name {
+        padding: 5px;
+        display: inline-block;
+        width: 100%;
         border-radius: 0 0 3px 3px;
-        background-color: #f4f5fa; }
-      .item-wrapper .items-container ul li .active-check {
+        background-color: #f4f5fa;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-align: center; }
+        .item-wrapper .items-container ul .tile-item .item-name a {
+          text-decoration: none; }
+      .item-wrapper .items-container ul .tile-item .active-check {
         position: absolute;
         left: 10px;
         top: 10px;
@@ -89,12 +97,12 @@
         height: 20px;
         border-radius: 50%;
         border: 1px solid #ddd; }
-      .item-wrapper .items-container ul li.active {
+      .item-wrapper .items-container ul .tile-item.active {
         box-shadow: 0 6px 34px rgba(44, 133, 237, 0.25);
         border: 2px solid #3a98c8; }
-        .item-wrapper .items-container ul li.active .active-check {
+        .item-wrapper .items-container ul .tile-item.active .active-check {
           background-color: #3a98c8; }
-          .item-wrapper .items-container ul li.active .active-check::before {
+          .item-wrapper .items-container ul .tile-item.active .active-check::before {
             content: '\f00c'; }
 
 .item-table-wrapper table {

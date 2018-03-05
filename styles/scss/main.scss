@@ -68,17 +68,17 @@
             display: flex;
             flex-wrap: wrap;
 
-            li {
+            .tile-item {
                 border-radius: 5px;
                 border: 1px solid #c8c8c8;
                 background-color: #ffffff;
                 flex-grow: 1;
                 padding: 0;
                 margin: 10px;
-                width: 210px;
-                max-width: 210px;
-                min-width: 210px;
-                height: 210px;
+                width: 150px;
+                max-width: 150px;
+                min-width: 150px;
+                height: 150px;
                 display: inline-flex;
                 flex-direction: column;
                 justify-content: center;
@@ -88,17 +88,26 @@
                 .item-img {
                     flex-grow: 1;
                     display: inline-flex;
-                    align-items: center;
                     justify-content: center;
+                    width: 100%;
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    background-size: contain;
                 }
 
                 .item-name {
                     padding: 5px;
-                    display: inline-flex;
-                    justify-content: center;
+                    display: inline-block;
                     width: 100%;
                     border-radius: 0 0 3px 3px;
                     background-color: #f4f5fa;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    text-align: center;
+                    a {
+                        text-decoration: none;
+                    }
                 }
 
                 .active-check {
